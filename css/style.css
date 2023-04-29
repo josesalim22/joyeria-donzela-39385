@@ -314,10 +314,36 @@ main h1 {
 
 /*Estilos nosotros.html */
 
+.datos-nosotros {
+    width: 90%;
+    margin: 20px auto;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(2, auto);
+    grid-template-areas: "conoce-nosotros conoce-nosotros" "nosotros-imagen nosotros-texto";
+}
+
+.titulo-nos {
+    grid-area: conoce-nosotros;
+}
+
+.imagen-nosotros {
+    /*  float: left; */
+    grid-area: nosotros-imagen;
+    width: 50%;
+}
+
 .nosotros img {
     width: 90%;
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+.nosotros-info {
+    /*  float: right; */
+    width: 50%;
+    grid-area: nosotros-texto;
 }
 
 .nosotros-info h3 {
@@ -333,16 +359,6 @@ main h1 {
     font-family: 'Montserrat', sans-serif;
 }
 
-.imagen-nosotros {
-    /*  float: left; */
-    width: 50%;
-}
-
-.nosotros-info {
-    /*  float: right; */
-    width: 50%;
-}
-
 .seguridad {
     text-align: center;
     /*  float: left; */
@@ -351,6 +367,7 @@ main h1 {
 
 .mejor-precio {
     /*  float: right; */
+    text-align: center;
     width: 50%;
 }
 
@@ -358,10 +375,6 @@ main h1 {
     width: 50%;
     background-repeat: no-repeat;
     background-size: cover;
-}
-
-.mejor-precio {
-    text-align: center;
 }
 
 .mejor-precio img {
