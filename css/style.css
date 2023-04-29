@@ -189,6 +189,7 @@ main h1 {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+    padding-bottom: 10px;
 }
 
 .productos-novedades {
@@ -214,7 +215,7 @@ main h1 {
 }
 
 .card {
-    width: 200px;
+    width: 180px;
     /*height: 300px;*/
     background-color: white;
     padding: 10px;
@@ -292,9 +293,10 @@ main h1 {
     font-family: 'Montserrat', sans-serif;
 }
 
-.clear {
+
+/* .clear {
     clear: both;
-}
+} */
 
 .boton-entrada {
     display: block;
@@ -332,23 +334,23 @@ main h1 {
 }
 
 .imagen-nosotros {
-    float: left;
+    /*  float: left; */
     width: 50%;
 }
 
 .nosotros-info {
-    float: right;
+    /*  float: right; */
     width: 50%;
 }
 
 .seguridad {
     text-align: center;
-    float: left;
+    /*  float: left; */
     width: 50%;
 }
 
 .mejor-precio {
-    float: right;
+    /*  float: right; */
     width: 50%;
 }
 
@@ -416,4 +418,35 @@ form input[type="reset"] {
     display: block;
     margin: 10px auto 0;
     font-family: 'Josefin Sans', sans-serif;
+}
+
+@media(max-width:768px) {
+    .productos-novedades {
+        grid-template-columns: 1fr 1fr;
+    }
+    .logo-footer {
+        display: none;
+    }
+    .navbar-encabezado {
+        flex-direction: column;
+        gap: 5px;
+    }
+    .navbar-encabezado li a {
+        font-size: 16px;
+    }
+    main h1 {
+        font-size: 30px;
+    }
+}
+
+@media(max-width:375px) {
+    .productos-novedades {
+        grid-template-columns: 1fr;
+    }
+    .nav-encabezado {
+        padding-right: 10px;
+    }
+    .pie-de-pagina {
+        flex-direction: column;
+    }
 }
