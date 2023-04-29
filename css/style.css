@@ -406,7 +406,8 @@ main h1 {
 }
 
 .seguridad img {
-    width: 50%;
+    width: 40%;
+    max-width: 160px;
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -419,7 +420,8 @@ main h1 {
 }
 
 .mejor-precio img {
-    width: 50%;
+    width: 40%;
+    max-width: 160px;
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -477,6 +479,24 @@ form input[type="reset"] {
     main h1 {
         font-size: 30px;
     }
+    /* pagina nosotros*/
+    .datos-nosotros {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3, auto);
+        grid-template-areas: "conoce-nosotros" "nosotros-imagen" "nosotros-texto";
+    }
+    .datos-nosotros h2,
+    .mas-nosotros h2 {
+        font-size: 20px;
+    }
+    .nosotros-info h3,
+    .mas-nosotros h3 {
+        font-size: 16px;
+    }
+    .nosotros-info p,
+    .mas-nosotros p {
+        font-size: 15px;
+    }
 }
 
 @media(max-width:375px) {
@@ -488,5 +508,11 @@ form input[type="reset"] {
     }
     .pie-de-pagina {
         flex-direction: column;
+    }
+    /* pagina nosotros*/
+    .mas-nosotros {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3, auto);
+        grid-template-areas: "area-titulo-mas" "area-seguridad" "area-precio";
     }
 }
