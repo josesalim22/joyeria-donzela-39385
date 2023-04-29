@@ -261,9 +261,37 @@ main h1 {
 
 /*Estilos blog.html */
 
+.nuestro-blog {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto repeat(2, 1fr);
+    grid-template-areas: "area-titulo-blog area-titulo-blog" "area-blog2 area-blog1" "area-blog2 area-blog3";
+}
+
+.titulo-blog {
+    grid-area: area-titulo-blog;
+}
+
+.entrada-blog1 {
+    grid-area: area-blog1;
+}
+
+.entrada-blog2 {
+    grid-area: area-blog2;
+}
+
+.entrada-blog3 {
+    grid-area: area-blog3;
+}
+
 .imagen-blog {
-    float: left;
-    width: 50%;
+    /*  float: left; */
+    /*width: 90%;*/
+    /*  justify-content: center; */
     /*    display: inline-block;
     vertical-align: top; */
 }
@@ -275,7 +303,7 @@ main h1 {
 }
 
 .texto-entrada {
-    float: right;
+    /*  float: right; */
     width: 50%;
     /*     display: inline-block;
     vertical-align: top; */
