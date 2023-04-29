@@ -316,7 +316,8 @@ main h1 {
 
 .datos-nosotros {
     width: 90%;
-    margin: 20px auto;
+    max-width: 1500px;
+    margin: 0 auto;
     display: grid;
     grid-gap: 20px;
     grid-template-columns: 1fr 1fr;
@@ -331,19 +332,25 @@ main h1 {
 .imagen-nosotros {
     /*  float: left; */
     grid-area: nosotros-imagen;
-    width: 50%;
+    padding: 10px;
+    /* width: 50%; */
 }
 
-.nosotros img {
-    width: 90%;
+.imagen-nosotros img {
+    max-width: 100%;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 .nosotros-info {
     /*  float: right; */
-    width: 50%;
+    /*  width: 50%; */
     grid-area: nosotros-texto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .nosotros-info h3 {
@@ -359,28 +366,18 @@ main h1 {
     font-family: 'Montserrat', sans-serif;
 }
 
-.seguridad {
-    text-align: center;
-    /*  float: left; */
-    width: 50%;
-}
 
-.mejor-precio {
-    /*  float: right; */
-    text-align: center;
-    width: 50%;
-}
+/* seccion mas-nosotros*/
 
-.seguridad img {
-    width: 50%;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-.mejor-precio img {
-    width: 50%;
-    background-repeat: no-repeat;
-    background-size: cover;
+.mas-nosotros {
+    width: 90%;
+    max-width: 1500px;
+    margin: 0 auto;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(2, auto);
+    grid-template-areas: "area-titulo-mas area-titulo-mas" "area-seguridad area-precio";
 }
 
 .mas-nosotros h3 {
@@ -395,6 +392,36 @@ main h1 {
     color: #C6F8FF;
     font-family: 'Montserrat', sans-serif;
     text-align: left;
+}
+
+.titulo-mas {
+    grid-area: area-titulo-mas;
+}
+
+.seguridad {
+    text-align: center;
+    /*  float: left; */
+    /* width: 50%; */
+    grid-area: area-seguridad;
+}
+
+.seguridad img {
+    width: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.mejor-precio {
+    /*  float: right; */
+    text-align: center;
+    /* width: 50%; */
+    grid-area: area-precio;
+}
+
+.mejor-precio img {
+    width: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 
