@@ -69,7 +69,7 @@ header {
 }
 
 .navbar-encabezado li a:hover {
-    color: #000;
+    color: #C6F8FF;
 }
 
 main {
@@ -146,18 +146,21 @@ footer {
 
 /* Barra de navegacion header y footer */
 
-.navbar {
+.navbar,
+.navbar-blog {
     list-style: none;
 }
 
-.navbar li a {
+.navbar li a,
+.navbar-blog li a {
     text-decoration: none;
     color: #F2962F;
     font-family: 'Montserrat', sans-serif;
 }
 
-.navbar li a:hover {
-    color: #000;
+.navbar li a:hover,
+.navbar-blog li a:hover {
+    color: #C6F8FF;
 }
 
 
