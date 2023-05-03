@@ -250,6 +250,7 @@ main h1 {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+    padding-bottom: 10px;
 }
 
 .productos-stock {
@@ -505,7 +506,8 @@ form input[type="reset"] {
 }
 
 @media(max-width:768px) {
-    .productos-novedades {
+    .productos-novedades,
+    .productos-stock {
         grid-template-columns: 1fr 1fr;
     }
     .logo-footer {
@@ -542,7 +544,8 @@ form input[type="reset"] {
 }
 
 @media(max-width:375px) {
-    .productos-novedades {
+    .productos-novedades,
+    .productos-stock {
         grid-template-columns: 1fr;
     }
     .nav-encabezado {
