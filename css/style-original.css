@@ -1,0 +1,563 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Montserrat:wght@100;200;400&display=swap');
+
+/*
+Tipografias
+font-family: 'Josefin Sans', sans-serif;
+font-family: 'Montserrat', sans-serif;
+*/
+
+
+/*
+Colores
+
+*/
+
+
+/*Estilos Todo el sitio*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #0B1A4D;
+}
+
+
+/* .encabezado a {
+    display: inline;
+} */
+
+.encabezado {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.encabezado a img {
+    height: 150px;
+    width: auto;
+    /*display: inline;*/
+}
+
+.nav-encabezado {
+    padding-right: 50px;
+}
+
+
+/* encabezado nav ul li {
+    display: inline;
+} */
+
+.navbar-encabezado {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar-encabezado li a {
+    text-decoration: none;
+    color: #F2962F;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+}
+
+.navbar-encabezado li a:hover {
+    color: #C6F8FF;
+}
+
+main {
+    background-color: #1B3079;
+}
+
+h2 {
+    padding-top: 25px;
+    margin-bottom: 25px;
+    font-family: 'Josefin Sans', sans-serif;
+    text-align: center;
+    color: #F2962F;
+}
+
+
+/* .logo-encabezado {
+    float: left;
+    width: 50%;
+}
+
+.barra-encabezado {
+    float: right;
+    width: 50%;
+} */
+
+
+/* Footer */
+
+footer {
+    background-color: #0B1A4D;
+}
+
+.logo-footer {
+    height: 150px;
+}
+
+.pie-de-pagina {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.datos-contacto p {
+    color: #F2962F;
+    font-family: 'Montserrat', sans-serif;
+    padding: 5px;
+    text-align: center;
+}
+
+.datos {
+    /*  display: inline-block; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.datos-contacto {
+    margin-right: 20px;
+}
+
+
+/* .redes-sociales {
+    margin-left: 20px;
+} */
+
+.nav-pie {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px;
+}
+
+
+/* Barra de navegacion header y footer */
+
+.navbar,
+.navbar-blog {
+    list-style: none;
+}
+
+.navbar li a,
+.navbar-blog li a {
+    text-decoration: none;
+    color: #F2962F;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.navbar li a:hover,
+.navbar-blog li a:hover {
+    color: #C6F8FF;
+}
+
+
+/*Estilos index.html */
+
+main h1 {
+    font-family: 'Josefin Sans', sans-serif;
+    /*font-weight: 400;*/
+    font-size: 40px;
+    text-align: left;
+    padding: 50px;
+    background-color: rgba(0, 0, 0, 0.25);
+}
+
+.portada {
+    background-image: url("../assets/img/imagen-fondo.png");
+    width: 100%;
+    height: 700px;
+    /*height: 100vh;*/
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.novedades {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 10px;
+}
+
+.productos-novedades {
+    /* width: 60%; */
+    display: grid;
+    /* grid-template-columns: 1fr 1fr; */
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    justify-content: center;
+    grid-gap: 10px;
+}
+
+.boton-detalle {
+    background-color: #F2962F;
+    text-decoration: none;
+    color: white;
+    border-radius: 20px;
+    padding: 5px;
+    border: solid 1px black;
+    display: block;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    width: 60%;
+}
+
+.card {
+    width: 180px;
+    /*height: 300px;*/
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.card img {
+    max-width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.precio {
+    margin-bottom: 10px;
+}
+
+.texto-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/*Estilos Productos*/
+
+.seccion-productos {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 10px;
+}
+
+.productos-stock {
+    /* width: 60%; */
+    display: grid;
+    /* grid-template-columns: 1fr 1fr; */
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    justify-content: center;
+    grid-gap: 10px;
+}
+
+
+/*Estilos blog.html */
+
+
+/* .nuestro-blog {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto repeat(2, 1fr);
+    grid-template-areas: "area-titulo-blog area-titulo-blog" "area-blog2 area-blog1" "area-blog2 area-blog3";
+}
+ */
+
+
+/* .titulo-blog {
+    grid-area: area-titulo-blog;
+}
+
+.entrada-blog1 {
+    grid-area: area-blog1;
+}
+
+.entrada-blog2 {
+    grid-area: area-blog2;
+}
+
+.entrada-blog3 {
+    grid-area: area-blog3;
+} */
+
+
+/*.imagen-blog {
+    /*  float: left; */
+
+
+/*width: 90%;*/
+
+
+/*  justify-content: center; */
+
+
+/*    display: inline-block;
+    vertical-align: top; 
+}*/
+
+.imagen-blog img {
+    /*  width: 90%; */
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+/* .texto-entrada {
+      float: right; 
+    width: 50%;
+        display: inline-block;
+    vertical-align: top; 
+} */
+
+.texto-entrada h3 {
+    margin-bottom: 20px;
+    font-family: 'Josefin Sans', sans-serif;
+    color: #C6F8FF;
+    text-align: center;
+}
+
+.texto-entrada p {
+    color: #C6F8FF;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+/* .clear {
+    clear: both;
+} */
+
+.boton-entrada {
+    display: block;
+    width: 150px;
+    margin-top: 20px;
+    background-color: #F2962F;
+    text-decoration: none;
+    color: white;
+    padding: 5px;
+    border: solid 1px black;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+}
+
+
+/*Estilos nosotros.html */
+
+.datos-nosotros {
+    width: 90%;
+    max-width: 1500px;
+    margin: 0 auto;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(2, auto);
+    grid-template-areas: "conoce-nosotros conoce-nosotros" "nosotros-imagen nosotros-texto";
+}
+
+.titulo-nos {
+    grid-area: conoce-nosotros;
+}
+
+.imagen-nosotros {
+    /*  float: left; */
+    grid-area: nosotros-imagen;
+    padding: 10px;
+    /* width: 50%; */
+}
+
+.imagen-nosotros img {
+    max-width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.nosotros-info {
+    /*  float: right; */
+    /*  width: 50%; */
+    grid-area: nosotros-texto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.nosotros-info h3 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-family: 'Josefin Sans', sans-serif;
+    color: #C6F8FF;
+    text-align: center;
+}
+
+.nosotros-info p {
+    color: #C6F8FF;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+/* seccion mas-nosotros*/
+
+.mas-nosotros {
+    width: 90%;
+    max-width: 1500px;
+    margin: 0 auto;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(2, auto);
+    grid-template-areas: "area-titulo-mas area-titulo-mas" "area-seguridad area-precio";
+}
+
+.mas-nosotros h3 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-family: 'Josefin Sans', sans-serif;
+    color: #C6F8FF;
+    text-align: center;
+}
+
+.mas-nosotros p {
+    color: #C6F8FF;
+    font-family: 'Montserrat', sans-serif;
+    text-align: left;
+}
+
+.titulo-mas {
+    grid-area: area-titulo-mas;
+}
+
+.seguridad {
+    text-align: center;
+    /*  float: left; */
+    /* width: 50%; */
+    grid-area: area-seguridad;
+}
+
+.seguridad img {
+    width: 40%;
+    max-width: 160px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.mejor-precio {
+    /*  float: right; */
+    text-align: center;
+    /* width: 50%; */
+    grid-area: area-precio;
+}
+
+.mejor-precio img {
+    width: 40%;
+    max-width: 160px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+/*Estilos contacto.html */
+
+form fieldset {
+    display: block;
+    max-width: 600px;
+    margin: 0 auto 20px;
+    color: #C6F8FF;
+    font-family: 'Montserrat', sans-serif;
+}
+
+form fieldset label {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+form fieldset input {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+form fieldset textarea {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+form input[type="submit"],
+form input[type="reset"] {
+    display: block;
+    margin: 10px auto 0;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+@media(max-width:768px) {
+    .productos-novedades,
+    .productos-stock {
+        grid-template-columns: 1fr 1fr;
+    }
+    .logo-footer {
+        display: none;
+    }
+    .navbar-encabezado {
+        flex-direction: column;
+        gap: 5px;
+    }
+    .navbar-encabezado li a {
+        font-size: 16px;
+    }
+    main h1 {
+        font-size: 30px;
+    }
+    /* pagina nosotros*/
+    .datos-nosotros {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3, auto);
+        grid-template-areas: "conoce-nosotros" "nosotros-imagen" "nosotros-texto";
+    }
+    .datos-nosotros h2,
+    .mas-nosotros h2 {
+        font-size: 20px;
+    }
+    .nosotros-info h3,
+    .mas-nosotros h3 {
+        font-size: 16px;
+    }
+    .nosotros-info p,
+    .mas-nosotros p {
+        font-size: 15px;
+    }
+}
+
+@media(max-width:375px) {
+    .productos-novedades,
+    .productos-stock {
+        grid-template-columns: 1fr;
+    }
+    .nav-encabezado {
+        padding-right: 10px;
+    }
+    .pie-de-pagina {
+        flex-direction: column;
+    }
+    /* pagina nosotros*/
+    .mas-nosotros {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3, auto);
+        grid-template-areas: "area-titulo-mas" "area-seguridad" "area-precio";
+    }
+}
