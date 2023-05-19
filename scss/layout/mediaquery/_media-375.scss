@@ -1,0 +1,19 @@
+@media (max-width:375px) {
+	.productos-novedades {
+		grid-template-columns: 1fr;
+	}
+	.productos-stock {
+		grid-template-columns: 1fr;
+	}
+	.nav-encabezado {
+		padding-right: 10px;
+	}
+	.pie-de-pagina {
+		flex-direction: column;
+	}
+	.mas-nosotros {
+		grid-template-columns: 1fr;
+		grid-template-rows: repeat(3, auto);
+		grid-template-areas: "area-titulo-mas" "area-seguridad" "area-precio";
+	}
+}

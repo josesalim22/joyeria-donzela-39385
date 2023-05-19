@@ -436,4 +436,75 @@ main section h2 {
   text-align: center;
 }
 
+@media (max-width: 768px) {
+  .productos {
+    grid-template-columns: 1fr 1fr;
+  }
+  .logo-footer {
+    display: none;
+  }
+  .navbar-encabezado {
+    flex-direction: column;
+    gap: 5px;
+  }
+  .navbar-encabezado li a {
+    font-size: 16px;
+  }
+  main h1 {
+    font-size: 30px;
+  }
+  .datos-nosotros {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, auto);
+    grid-template-areas: "conoce-nosotros" "nosotros-imagen" "nosotros-texto";
+  }
+  .datos-nosotros .h2 {
+    font-size: 20px;
+  }
+  .mas-nosotros h2 {
+    font-size: 20px;
+  }
+  .mas-nosotros h3 {
+    font-size: 16px;
+  }
+  .mas-nosotros p {
+    font-size: 15px;
+  }
+  .nosotros-info h3 {
+    font-size: 16px;
+  }
+  .nosotros-info p {
+    font-size: 15px;
+  }
+  .nuestro-blog {
+    grid-template-columns: 1fr;
+    grid-template-areas: "area-titulo-blog" "area-blog1" "area-blog2" "area-blog3";
+  }
+  .nuestro-blog .texto-entrada h3 {
+    font-size: 16px;
+  }
+  .nuestro-blog .texto-entrada p {
+    font-size: 15px;
+  }
+}
+@media (max-width: 375px) {
+  .productos-novedades {
+    grid-template-columns: 1fr;
+  }
+  .productos-stock {
+    grid-template-columns: 1fr;
+  }
+  .nav-encabezado {
+    padding-right: 10px;
+  }
+  .pie-de-pagina {
+    flex-direction: column;
+  }
+  .mas-nosotros {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, auto);
+    grid-template-areas: "area-titulo-mas" "area-seguridad" "area-precio";
+  }
+}
+
 /*# sourceMappingURL=style.css.map */

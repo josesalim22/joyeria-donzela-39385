@@ -1,0 +1,61 @@
+@media (max-width:768px) {
+	.productos {
+		grid-template-columns: 1fr 1fr;
+	}
+	.logo-footer {
+		display: none;
+	}
+	.navbar-encabezado {
+		flex-direction: column;
+		gap: 5px;
+		li {
+			a {
+				font-size: 16px;
+			}
+		}
+	}
+	main {
+		h1 {
+			font-size: 30px;
+		}
+	}
+	.datos-nosotros {
+		grid-template-columns: 1fr;
+		grid-template-rows: repeat(3, auto);
+		grid-template-areas: "conoce-nosotros" "nosotros-imagen" "nosotros-texto";
+		.h2 {
+			font-size: 20px;
+		}
+	}
+	.mas-nosotros {
+		h2 {
+			font-size: 20px;
+		}
+		h3 {
+			font-size: 16px;
+		}
+		p {
+			font-size: 15px;
+		}
+	}
+	.nosotros-info {
+		h3 {
+			font-size: 16px;
+		}
+		p {
+			font-size: 15px;
+		}
+	}
+.nuestro-blog {
+	grid-template-columns: 1fr;
+	grid-template-areas: "area-titulo-blog" "area-blog1" "area-blog2" "area-blog3";
+	.texto-entrada {
+		h3 {
+			font-size: 16px;
+		}
+		p {
+			font-size: 15px;
+		}
+	}
+}
+}
