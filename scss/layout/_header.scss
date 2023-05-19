@@ -1,0 +1,37 @@
+header {
+     background-color:$fondo-header-footer;
+   }
+   
+    
+   .encabezado {
+     @include flex (row,nowrap,space-between,center); 
+     a {
+       img {
+         height: 150px;
+         width: auto;
+       }
+     }
+   }
+ 
+   .nav-encabezado {
+     padding-right: 50px;
+   }
+   
+   
+   .navbar-encabezado {
+     @include flex(row,nowrap,center,center);
+     list-style: none;
+     gap: 20px;
+     li {
+       a {
+         text-decoration: none;
+         color: $color-boton;
+         font-family: $fuente-enlace;
+         font-size: 20px;
+         &:hover {
+           color: $color-letras;
+         }
+       }
+     }
+   }
+   

@@ -1,7 +1,96 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Montserrat:wght@100;200;400&display=swap");
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+header {
+  background-color: #0B1A4D;
+}
+
+.encabezado {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.encabezado a img {
+  height: 150px;
+  width: auto;
+}
+
+.nav-encabezado {
+  padding-right: 50px;
+}
+
+.navbar-encabezado {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  gap: 20px;
+}
+.navbar-encabezado li a {
+  text-decoration: none;
+  color: #F2962F;
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+}
+.navbar-encabezado li a:hover {
+  color: #C6F8FF;
+}
+
+footer {
+  background-color: #0B1A4D;
+}
+footer .pie-de-pagina {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: none;
+}
+footer .pie-de-pagina .logo-footer {
+  height: 150px;
+}
+footer .pie-de-pagina .datos {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  align-items: center;
+}
+footer .pie-de-pagina .datos .datos-contacto {
+  margin-right: 20px;
+}
+footer .pie-de-pagina .datos .datos-contacto p {
+  color: #F2962F;
+  font-family: "Montserrat", sans-serif;
+  padding: 5px;
+  text-align: center;
+}
+footer .pie-de-pagina .nav-pie {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  margin-right: 20px;
+}
+footer .pie-de-pagina .nav-pie .navbar {
+  list-style: none;
+}
+footer .pie-de-pagina .nav-pie .navbar li a {
+  text-decoration: none;
+  color: #F2962F;
+  font-family: "Montserrat", sans-serif;
+}
+footer .pie-de-pagina .nav-pie .navbar li a:hover {
+  color: #C6F8FF;
 }
 
 /*# sourceMappingURL=style.css.map */
