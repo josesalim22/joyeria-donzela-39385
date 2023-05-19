@@ -402,7 +402,7 @@ main section h2 {
   gap: 10px;
 }
 .nuestro-blog .imagen-blog img {
-  max-width: 460px;
+  max-width: 440px;
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -485,6 +485,9 @@ main section h2 {
   }
   .nuestro-blog .texto-entrada p {
     font-size: 15px;
+  }
+  .nuestro-blog .imagen-blog img {
+    max-width: 370px;
   }
 }
 @media (max-width: 375px) {
