@@ -1,0 +1,65 @@
+main {
+	background-color: $fondo-main;
+    h1 {
+		font-family: $fuente-titulo;
+		font-size: 40px;
+		text-align: left;
+		padding: 50px;
+		background-color: rgba(0, 0, 0, 0.25);
+	}
+	section {
+		@include flex(column,nowrap,space-between,center);
+		padding-bottom: 10px;
+		h2 {
+			padding-top: 25px;
+			margin-bottom: 25px;
+			font-family: $fuente-titulo;
+			text-align: center;
+			color:$color-boton;
+		}
+	}
+}
+.portada {
+	background-image: url("../assets/img/imagen-fondo.png");
+	width: 100%;
+	height: 700px;
+	background-repeat: no-repeat;
+	background-size: cover;
+    @include flex(column,nowrap,flex-end,none);
+
+}
+.productos {
+	@include grid(repeat(4,1fr),none,center,none,none,10px);
+}
+
+.card {
+	width: 180px;
+	background-color: $color-fondo-card;
+	padding: 10px;
+	border-radius: 10px;
+	img {
+		max-width: 100%;
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+}
+
+
+.texto-card {
+	@include flex(column,nowrap,center,center);
+	.precio {
+		margin-bottom: 10px;
+	}
+	.boton-detalle {
+		background-color: $color-boton;
+		text-decoration: none;
+		color: $color-fondo-card;
+		border-radius: 20px;
+		padding: 5px;
+		border: solid 1px black;
+		display: block;
+		font-family: $fuente-enlace;
+		text-align: center;
+		width: 60%;
+	}
+}

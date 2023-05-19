@@ -93,4 +93,88 @@ footer .pie-de-pagina .nav-pie .navbar li a:hover {
   color: #C6F8FF;
 }
 
+main {
+  background-color: #1B3079;
+}
+main h1 {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 40px;
+  text-align: left;
+  padding: 50px;
+  background-color: rgba(0, 0, 0, 0.25);
+}
+main section {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 10px;
+}
+main section h2 {
+  padding-top: 25px;
+  margin-bottom: 25px;
+  font-family: "Josefin Sans", sans-serif;
+  text-align: center;
+  color: #F2962F;
+}
+
+.portada {
+  background-image: url("../assets/img/imagen-fondo.png");
+  width: 100%;
+  height: 700px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: flex-end;
+  align-items: none;
+}
+
+.productos {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: none;
+  justify-content: center;
+  align-items: none;
+  grid-template-areas: none;
+  grid-gap: 10px;
+}
+
+.card {
+  width: 180px;
+  background-color: white;
+  padding: 10px;
+  border-radius: 10px;
+}
+.card img {
+  max-width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.texto-card {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+}
+.texto-card .precio {
+  margin-bottom: 10px;
+}
+.texto-card .boton-detalle {
+  background-color: #F2962F;
+  text-decoration: none;
+  color: white;
+  border-radius: 20px;
+  padding: 5px;
+  border: solid 1px black;
+  display: block;
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+  width: 60%;
+}
+
 /*# sourceMappingURL=style.css.map */
