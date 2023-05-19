@@ -1,0 +1,78 @@
+.datos-nosotros {
+	width: 90%;
+	max-width: 1500px;
+	margin: 0 auto;
+    @include grid(repeat(2,1fr),repeat(2, auto),none,none,"conoce-nosotros conoce-nosotros" "nosotros-imagen nosotros-texto",20px);
+	.titulo-nos {
+		grid-area: conoce-nosotros;
+	}
+	.imagen-nosotros {
+		grid-area: nosotros-imagen;
+		padding: 10px;
+		img {
+			max-width: 100%;
+			background-repeat: no-repeat;
+			background-size: cover;
+		}
+	}
+	.nosotros-info {
+		grid-area: nosotros-texto;
+		text-align: center;
+        @include flex(column,nowrap,center,center);
+		h3 {
+			margin-top: 20px;
+			margin-bottom: 20px;
+			font-family: $fuente-titulo;
+			color: $color-letras;
+			text-align: center;
+		}
+		p {
+			color: $color-letras;
+			font-family: $fuente-enlace;
+		}
+	}
+}
+
+
+.mas-nosotros {
+	width: 90%;
+	max-width: 1500px;
+	margin: 0 auto;
+    @include grid(repeat(2,1fr),repeat(2, auto),none,none,"area-titulo-mas area-titulo-mas" "area-seguridad area-precio",20px);
+	    
+	h3 {
+		margin-top: 20px;
+		margin-bottom: 20px;
+		font-family: $fuente-titulo;
+		color: $color-letras;
+		text-align: center;
+	}
+	p {
+		color: $color-letras;
+		font-family: $fuente-enlace;
+		text-align: left;
+	}
+	.titulo-mas {
+		grid-area: area-titulo-mas;
+	}
+	.seguridad {
+		text-align: center;
+		grid-area: area-seguridad;
+		img {
+			width: 40%;
+			max-width: 160px;
+			background-repeat: no-repeat;
+			background-size: cover;
+		}
+	}
+	.mejor-precio {
+		text-align: center;
+		grid-area: area-precio;
+		img {
+			width: 40%;
+			max-width: 160px;
+			background-repeat: no-repeat;
+			background-size: cover;
+		}
+	}
+}

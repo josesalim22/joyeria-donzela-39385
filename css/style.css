@@ -177,4 +177,97 @@ main section h2 {
   width: 60%;
 }
 
+.datos-nosotros {
+  width: 90%;
+  max-width: 1500px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, auto);
+  justify-content: none;
+  align-items: none;
+  grid-template-areas: "conoce-nosotros conoce-nosotros" "nosotros-imagen nosotros-texto";
+  grid-gap: 20px;
+}
+.datos-nosotros .titulo-nos {
+  grid-area: conoce-nosotros;
+}
+.datos-nosotros .imagen-nosotros {
+  grid-area: nosotros-imagen;
+  padding: 10px;
+}
+.datos-nosotros .imagen-nosotros img {
+  max-width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.datos-nosotros .nosotros-info {
+  grid-area: nosotros-texto;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+}
+.datos-nosotros .nosotros-info h3 {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-family: "Josefin Sans", sans-serif;
+  color: #C6F8FF;
+  text-align: center;
+}
+.datos-nosotros .nosotros-info p {
+  color: #C6F8FF;
+  font-family: "Montserrat", sans-serif;
+}
+
+.mas-nosotros {
+  width: 90%;
+  max-width: 1500px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, auto);
+  justify-content: none;
+  align-items: none;
+  grid-template-areas: "area-titulo-mas area-titulo-mas" "area-seguridad area-precio";
+  grid-gap: 20px;
+}
+.mas-nosotros h3 {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-family: "Josefin Sans", sans-serif;
+  color: #C6F8FF;
+  text-align: center;
+}
+.mas-nosotros p {
+  color: #C6F8FF;
+  font-family: "Montserrat", sans-serif;
+  text-align: left;
+}
+.mas-nosotros .titulo-mas {
+  grid-area: area-titulo-mas;
+}
+.mas-nosotros .seguridad {
+  text-align: center;
+  grid-area: area-seguridad;
+}
+.mas-nosotros .seguridad img {
+  width: 40%;
+  max-width: 160px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.mas-nosotros .mejor-precio {
+  text-align: center;
+  grid-area: area-precio;
+}
+.mas-nosotros .mejor-precio img {
+  width: 40%;
+  max-width: 160px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 /*# sourceMappingURL=style.css.map */
