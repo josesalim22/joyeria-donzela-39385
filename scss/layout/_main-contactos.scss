@@ -1,0 +1,98 @@
+.form-contacto {
+	width: 460px;
+	height: auto;
+	margin: 0px auto;
+	border-radius: 10px;
+	padding-top: 30px;
+	padding-bottom: 20px;
+	background-color: $color-fondo-card;
+	
+	.formulario {
+		form {
+			p {
+				font-family: $fuente-enlace;
+				input {
+					background-color: $color-fondo-card;
+					width: 408px;
+					height: 40px;
+					border-radius: 5px;
+					border-style: solid;
+					border-width: 1px;
+					border-color: $color-letras-oscura;
+					margin-top: 10px;
+					padding-left: 10px;
+					margin-bottom: 20px;
+				}
+				textarea {
+					background-color: $color-fondo-card;
+					width: 405px;
+					height: 150px;
+					border-radius: 5px;
+					border-style: solid;
+					border-width: 1px;
+					border-color: $color-letras-oscura;
+					margin-top: 10px;
+					padding-left: 10px;
+					margin-bottom: 20px;
+					padding-top: 15px;
+				}
+				label {
+					display: block;
+					float: center;
+				}
+				span {
+					color: $color-boton;
+				}
+			}
+			button {
+				height: 45px;
+				padding-left: 5px;
+				padding-right: 5px;
+				margin-bottom: 20px;
+				margin-top: 10px;
+				text-transform: uppercase;
+				background-color: $color-boton;
+				border-color: black;
+				border-style: solid;
+				border-radius: 10px;
+				width: 420px;
+				cursor: pointer;
+				p {
+					color: $color-fondo-card;
+					font-family: $fuente-enlace;
+				}
+			}
+			.aviso {
+				font-size: 13px;
+				color: $color-letras-oscura;
+			}
+		}
+		h2 {
+			font-size: 30px;			
+			padding-bottom: 20px;
+			color: $color-letras-oscura;
+			
+		}
+		h3 {
+			font-size: 16px;
+			padding-bottom: 30px;
+			color: $color-letras-oscura;
+		}
+		p {
+			font-size: 14px;
+			color: $color-letras-oscura;
+		}
+		input {
+			&:focus {
+				outline: 0;
+				border: 1px solid $color-boton;
+			}
+		}
+		textarea {
+			&:focus {
+				outline: 0;
+				border: 1px solid $color-boton;
+			}
+		}
+	}
+}

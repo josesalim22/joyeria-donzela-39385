@@ -270,4 +270,93 @@ main section h2 {
   background-size: cover;
 }
 
+.form-contacto {
+  width: 460px;
+  height: auto;
+  margin: 0px auto;
+  border-radius: 10px;
+  padding-top: 30px;
+  padding-bottom: 20px;
+  background-color: white;
+}
+.form-contacto .formulario form p {
+  font-family: "Montserrat", sans-serif;
+}
+.form-contacto .formulario form p input {
+  background-color: white;
+  width: 408px;
+  height: 40px;
+  border-radius: 5px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #0B1A4D;
+  margin-top: 10px;
+  padding-left: 10px;
+  margin-bottom: 20px;
+}
+.form-contacto .formulario form p textarea {
+  background-color: white;
+  width: 405px;
+  height: 150px;
+  border-radius: 5px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #0B1A4D;
+  margin-top: 10px;
+  padding-left: 10px;
+  margin-bottom: 20px;
+  padding-top: 15px;
+}
+.form-contacto .formulario form p label {
+  display: block;
+  float: center;
+}
+.form-contacto .formulario form p span {
+  color: #F2962F;
+}
+.form-contacto .formulario form button {
+  height: 45px;
+  padding-left: 5px;
+  padding-right: 5px;
+  margin-bottom: 20px;
+  margin-top: 10px;
+  text-transform: uppercase;
+  background-color: #F2962F;
+  border-color: black;
+  border-style: solid;
+  border-radius: 10px;
+  width: 420px;
+  cursor: pointer;
+}
+.form-contacto .formulario form button p {
+  color: white;
+  font-family: "Montserrat", sans-serif;
+}
+.form-contacto .formulario form .aviso {
+  font-size: 13px;
+  color: #0B1A4D;
+}
+.form-contacto .formulario h2 {
+  font-size: 30px;
+  padding-bottom: 20px;
+  color: #0B1A4D;
+}
+.form-contacto .formulario h3 {
+  font-size: 16px;
+  padding-bottom: 30px;
+  color: #0B1A4D;
+}
+.form-contacto .formulario p {
+  font-size: 14px;
+  color: #0B1A4D;
+}
+.form-contacto .formulario input:focus {
+  outline: 0;
+  border: 1px solid #F2962F;
+}
+.form-contacto .formulario textarea:focus {
+  outline: 0;
+  border: 1px solid #F2962F;
+}
+
 /*# sourceMappingURL=style.css.map */
