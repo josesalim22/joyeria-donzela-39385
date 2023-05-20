@@ -44,10 +44,9 @@ Puedes ver una demostración del proyecto en vivo a través de GitHub Pages. Par
 Lista de tecnologías usadas en el proyecto:
 
 ```
-HTML5
-CSS
+* HTML5
+* CSS
 ```
-
 ## Construido con 🛠️
 
 * [Visual Studio Code](https://code.visualstudio.com/) - El editor de codigo usado
@@ -55,7 +54,6 @@ CSS
 * [Git](https://git-scm.com/) - Usado para versionado y repositorio local
 * [GitHub](https://github.com/) - Usado para versionado y para alojar el repositorio Git
 * [Node.js](https://nodejs.org/es) - Necesario para funcionamiento de Sass
-
 
 ## Uso 🔧
 
@@ -75,3 +73,8 @@ git clone https://github.com/josesalim22/joyeria-donzela-39385.git
 4. Guarda los cambios y verifica que todo funcione correctamente de manera local.
 
 _Si deseas contribuir al proyecto, puedes comunicarte conmigo._
+
+
+## Autor ✒️
+
+* **José Salim** - *Trabajo Inicial y Documentación* - [josesalim22](https://github.com/josesalim22/)
