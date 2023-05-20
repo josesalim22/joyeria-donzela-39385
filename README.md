@@ -64,7 +64,7 @@ Para utilizar o ejecutar el proyecto localmente y realizar modificaciones, sigue
 ```
 git clone https://github.com/josesalim22/joyeria-donzela-39385.git
 ```
->Tambien puedes descargar en formato zip desde **<Code>** opcion Download Zip
+>Tambien puedes descargar en formato zip desde -Code -opcion Download Zip
 
 2. Abre el proyecto clonado en tu editor de código favorito.
 
@@ -73,7 +73,6 @@ git clone https://github.com/josesalim22/joyeria-donzela-39385.git
 4. Guarda los cambios y verifica que todo funcione correctamente de manera local.
 
 _Si deseas contribuir al proyecto, puedes comunicarte conmigo._
-
 
 ## Autor ✒️
 
