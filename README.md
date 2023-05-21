@@ -8,15 +8,6 @@ _Joyería Donzela es un sitio web diseñado como proyecto del curso de Desarroll
 
 > Imagen de la portada del sitio.
 
-## Tabla de Contenidos
-1. [Páginas](#Páginas)
-	2. [Estructura del proyecto](#Estructura del proyecto)
-3. [Demo](#Demo 🚀)
-4. [Tecnologías utilizadas](#Tecnologías utilizadas 📋)
-5. [Construido con](#Construido con 🛠️)
-6. [Uso](#Uso 🔧)
-7. [Autor](#Autor ✒️)
-
 ## Páginas
 
 El sitio web de Joyería Donzela, consta de las siguientes páginas:
@@ -57,8 +48,8 @@ Puedes ver una demostración del proyecto en vivo a través de GitHub Pages. Par
 Lista de tecnologías usadas en el proyecto:
 
 ```
-* HTML5
-* CSS
+- HTML5
+- CSS
 ```
 ## Construido con 🛠️
 
