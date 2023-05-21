@@ -2,7 +2,7 @@
 
 _Joyería Donzela es un sitio web diseñado como proyecto del curso de Desarrollo Web de [Coderhouse](https://www.coderhouse.com/), dedicado a ofrecer una amplia gama de joyas elegantes de oro y plata para aquellos que buscan realzar su estilo y expresar su personalidad a través de accesorios únicos. El objetivo principal de este proyecto es brindar una experiencia de aprendizaje práctica y el desarrollo de habilidades en el diseño y desarrollo web_
 
-[TOC]
+[[_TOC_]]
 
 ## Páginas
 
