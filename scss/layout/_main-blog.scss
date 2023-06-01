@@ -1,3 +1,4 @@
+@import '../components/botones';
 .nuestro-blog {
 	width: 90%;
 	max-width: 1000px;
@@ -12,20 +13,24 @@
         gap: 10px;
 	}
 	.entrada-blog2 {
+		@extend .entrada-blog1;
 		grid-area: area-blog2;
-        @include flex(column,nowrap,center,center);
-        gap: 10px;
+     
 	}
 	.entrada-blog3 {
+		@extend .entrada-blog1;
 		grid-area: area-blog3;
-        @include flex(column,nowrap,center,center);
-        gap: 10px;
+
 	}
 	.imagen-blog {
+		box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+		-webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+		-moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
 		img {
             max-width: 440px;
 			background-repeat: no-repeat;
 			background-size: cover;
+			vertical-align: middle;
 		}
 	}
 	.texto-entrada {
@@ -33,26 +38,71 @@
         @include flex(column,nowrap,space-between,center);
 
 		h3 {
+			margin-top: 5px;
 			margin-bottom: 20px;
 			font-family: $fuente-titulo;
 			color: $color-letras;
 			text-align: center;
 		}
 		p {
+			padding: 0px 10px 0px 10px;
 			color: $color-letras;
 			font-family: $fuente-enlace;
 		}
 	}
-	.boton-entrada {
-		display: block;
-		width: 150px;
-		margin-top: 20px;
-		background-color: $color-boton;
-		text-decoration: none;
-		color: $color-fondo-card;
-		padding: 5px;
-		border: solid 1px black;
-		font-family: $fuente-enlace;
-		text-align: center;
+	.modalDialog {
+		position: fixed;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		background: rgba(0, 0, 0, 0.8);
+		z-index: 99999;
+		opacity: 0;
+		-webkit-transition: opacity 100ms ease-in;
+		-moz-transition: opacity 100ms ease-in;
+		transition: opacity 100ms ease-in;
+		pointer-events: none;
+		&:target {
+			opacity: 1;
+			pointer-events: auto;
+		}
+		div {
+			max-width: 800px;
+			width: 90%;
+			position: relative;
+			margin: 10% auto;
+			padding: 20px;
+			border-radius: 3px;
+			background: $fondo-main;
+			h2 {
+				font-size: 20px;
+			}
+		}
 	}
+	.close {
+		
+		background: #f26d7d;
+		color: black;
+		line-height: 25px;
+		position: absolute;
+		right: -12px;
+		text-align: center;
+		top: -10px;
+		width: 34px;
+		height: 34px;
+		text-decoration: none;
+		font-weight: bold;
+		-webkit-border-radius: 50%;
+		-moz-border-radius: 50%;
+		border-radius: 50%;
+		-moz-box-shadow: 1px 1px 3px #000;
+		-webkit-box-shadow: 1px 1px 3px #000;
+		box-shadow: 1px 1px 3px #000;
+		padding-top: 5px;
+		&:hover {
+			background: #fa3f6f;
+		}
+	}
+
 }

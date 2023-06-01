@@ -438,6 +438,55 @@ main section h2 {
   border: 1px solid #F2962F;
 }
 
+.boton {
+  text-align: center;
+  text-decoration: none;
+  margin-top: 20px;
+  padding: 0.8em 1.7em;
+  background-color: transparent;
+  border-radius: 0.3em;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  transition: 0.5s;
+  font-weight: bold;
+  font-size: 17px;
+  border: 1px solid;
+  font-family: "Montserrat", sans-serif;
+  color: #F2962F;
+  z-index: 1;
+}
+.boton::before, .boton::after {
+  content: "";
+  display: block;
+  width: 50px;
+  height: 50px;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  border-radius: 50%;
+  z-index: -1;
+  background-color: #F2962F;
+  transition: 1s ease;
+}
+.boton::before {
+  top: -1em;
+  left: -1em;
+}
+.boton::after {
+  left: calc(100% + 1em);
+  top: calc(100% + 1em);
+}
+.boton:hover::before, .boton:hover::after {
+  height: 410px;
+  width: 410px;
+}
+.boton:hover {
+  color: white;
+}
+.boton:active {
+  filter: brightness(0.8);
+}
+
 .nuestro-blog {
   width: 90%;
   max-width: 1000px;
@@ -453,7 +502,7 @@ main section h2 {
 .nuestro-blog .titulo-blog {
   grid-area: area-titulo-blog;
 }
-.nuestro-blog .entrada-blog1 {
+.nuestro-blog .entrada-blog1, .nuestro-blog .entrada-blog3, .nuestro-blog .entrada-blog2 {
   grid-area: area-blog1;
   display: flex;
   flex-direction: column;
@@ -464,26 +513,20 @@ main section h2 {
 }
 .nuestro-blog .entrada-blog2 {
   grid-area: area-blog2;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: nowrap;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
 }
 .nuestro-blog .entrada-blog3 {
   grid-area: area-blog3;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: nowrap;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
+}
+.nuestro-blog .imagen-blog {
+  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
 }
 .nuestro-blog .imagen-blog img {
   max-width: 440px;
   background-repeat: no-repeat;
   background-size: cover;
+  vertical-align: middle;
 }
 .nuestro-blog .texto-entrada {
   display: flex;
@@ -493,26 +536,69 @@ main section h2 {
   align-items: center;
 }
 .nuestro-blog .texto-entrada h3 {
+  margin-top: 5px;
   margin-bottom: 20px;
   font-family: "Josefin Sans", sans-serif;
   color: #C6F8FF;
   text-align: center;
 }
 .nuestro-blog .texto-entrada p {
+  padding: 0px 10px 0px 10px;
   color: #C6F8FF;
   font-family: "Montserrat", sans-serif;
 }
-.nuestro-blog .boton-entrada {
-  display: block;
-  width: 150px;
-  margin-top: 20px;
-  background-color: #F2962F;
-  text-decoration: none;
-  color: white;
-  padding: 5px;
-  border: solid 1px black;
-  font-family: "Montserrat", sans-serif;
+.nuestro-blog .modalDialog {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.8);
+  z-index: 99999;
+  opacity: 0;
+  -webkit-transition: opacity 100ms ease-in;
+  -moz-transition: opacity 100ms ease-in;
+  transition: opacity 100ms ease-in;
+  pointer-events: none;
+}
+.nuestro-blog .modalDialog:target {
+  opacity: 1;
+  pointer-events: auto;
+}
+.nuestro-blog .modalDialog div {
+  max-width: 800px;
+  width: 90%;
+  position: relative;
+  margin: 10% auto;
+  padding: 20px;
+  border-radius: 3px;
+  background: #1B3079;
+}
+.nuestro-blog .modalDialog div h2 {
+  font-size: 20px;
+}
+.nuestro-blog .close {
+  background: #f26d7d;
+  color: black;
+  line-height: 25px;
+  position: absolute;
+  right: -12px;
   text-align: center;
+  top: -10px;
+  width: 34px;
+  height: 34px;
+  text-decoration: none;
+  font-weight: bold;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  -moz-box-shadow: 1px 1px 3px #000;
+  -webkit-box-shadow: 1px 1px 3px #000;
+  box-shadow: 1px 1px 3px #000;
+  padding-top: 5px;
+}
+.nuestro-blog .close:hover {
+  background: #fa3f6f;
 }
 
 @media (max-width: 768px) {
