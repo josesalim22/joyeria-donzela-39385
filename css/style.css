@@ -172,6 +172,55 @@ footer .pie-de-pagina .nav-pie .navbar li a:hover {
   color: white;
 }
 
+.boton {
+  text-align: center;
+  text-decoration: none;
+  margin-top: 20px;
+  padding: 0.8em 1.7em;
+  background-color: transparent;
+  border-radius: 0.3em;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  transition: 0.5s;
+  font-weight: bold;
+  font-size: 17px;
+  border: 1px solid;
+  font-family: "Montserrat", sans-serif;
+  color: #F2962F;
+  z-index: 1;
+}
+.boton::before, .boton::after {
+  content: "";
+  display: block;
+  width: 50px;
+  height: 50px;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  border-radius: 50%;
+  z-index: -1;
+  background-color: #F2962F;
+  transition: 1s ease;
+}
+.boton::before {
+  top: -1em;
+  left: -1em;
+}
+.boton::after {
+  left: calc(100% + 1em);
+  top: calc(100% + 1em);
+}
+.boton:hover::before, .boton:hover::after {
+  height: 410px;
+  width: 410px;
+}
+.boton:hover {
+  color: white;
+}
+.boton:active {
+  filter: brightness(0.8);
+}
+
 main {
   background-color: #1B3079;
 }
@@ -216,16 +265,23 @@ main section h2 {
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: none;
   justify-content: center;
-  align-items: none;
   grid-template-areas: none;
-  grid-gap: 10px;
+  grid-gap: 0px;
 }
 
 .card {
-  width: 180px;
+  width: 178px;
   background-color: white;
   padding: 10px;
   border-radius: 10px;
+  border: 2px solid black;
+  transition: 0.3s;
+  margin: 8px;
+  transform: scale(1);
+}
+.card:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transform: scale(1.1);
 }
 .card img {
   max-width: 100%;
@@ -243,17 +299,8 @@ main section h2 {
 .texto-card .precio {
   margin-bottom: 10px;
 }
-.texto-card .boton-detalle {
-  background-color: #F2962F;
-  text-decoration: none;
-  color: white;
+.texto-card .boton {
   border-radius: 20px;
-  padding: 5px;
-  border: solid 1px black;
-  display: block;
-  font-family: "Montserrat", sans-serif;
-  text-align: center;
-  width: 60%;
 }
 
 .datos-nosotros {

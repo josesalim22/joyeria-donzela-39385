@@ -1,3 +1,4 @@
+@import '../components/botones';
 main {
 	background-color: $fondo-main;
     h1 {
@@ -29,14 +30,22 @@ main {
 
 }
 .productos {
-	@include grid(repeat(4,1fr),none,center,none,none,10px);
+	@include grid(repeat(4,1fr),none,center,null,none,0px);
 }
 
 .card {
-	width: 180px;
+	width: 178px;
 	background-color: $color-fondo-card;
 	padding: 10px;
 	border-radius: 10px;
+	border: 2px solid black;
+    transition: 0.3s;
+    margin: 8px;
+    transform: scale(1);
+	&:hover {
+		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    	transform: scale(1.1);
+	}
 	img {
 		max-width: 100%;
 		background-repeat: no-repeat;
@@ -50,16 +59,9 @@ main {
 	.precio {
 		margin-bottom: 10px;
 	}
-	.boton-detalle {
-		background-color: $color-boton;
-		text-decoration: none;
-		color: $color-fondo-card;
+	.boton {
+		
 		border-radius: 20px;
-		padding: 5px;
-		border: solid 1px black;
-		display: block;
-		font-family: $fuente-enlace;
-		text-align: center;
-		width: 60%;
+
 	}
 }
