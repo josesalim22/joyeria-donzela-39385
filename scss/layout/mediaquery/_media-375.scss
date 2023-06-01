@@ -1,10 +1,20 @@
 @media (max-width:375px) {
-	.productos-novedades {
+	.portada {
+        
+        height: 350px;
+      
+    
+    }
+	main {
+		h1 {
+			font-size: 28px;
+		}
+	}
+
+	.productos {
 		grid-template-columns: 1fr;
 	}
-	.productos-stock {
-		grid-template-columns: 1fr;
-	}
+	
 	.nav-encabezado {
 		padding-right: 10px;
 	}
@@ -16,4 +26,42 @@
 		grid-template-rows: repeat(3, auto);
 		grid-template-areas: "area-titulo-mas" "area-seguridad" "area-precio";
 	}
+	.nuestro-blog {
+		.imagen-blog {
+			img {
+				max-width: 300px;
+			}
+		}
+	}
+	.form-contacto {
+        width: 300px;
+               
+        .formulario {
+            form {
+                p {
+                    
+                    input {
+                     
+                        width: 280px;
+                       
+                    }
+                    textarea {
+                        width: 280px;
+                       
+                    }
+                    
+                }
+                button {
+                   
+                    width: 290px;
+                   
+                }
+               
+            }
+            h2 {
+                font-size: 20px;			           
+            }
+            
+        }
+    }
 }

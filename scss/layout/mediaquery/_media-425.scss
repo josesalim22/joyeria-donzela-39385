@@ -1,0 +1,42 @@
+@media (max-width:425px){
+    .portada {
+        
+        height: 400px;
+      
+    
+    }
+
+    .form-contacto {
+        width: 350px;
+               
+        .formulario {
+            form {
+                p {
+                    
+                    input {
+                     
+                        width: 310px;
+                       
+                    }
+                    textarea {
+                        width: 310px;
+                       
+                    }
+                    
+                }
+                button {
+                   
+                    width: 320px;
+                   
+                }
+               
+            }
+            h2 {
+                font-size: 20px;			           
+            }
+            
+        }
+    }
+
+ 
+}

@@ -651,6 +651,10 @@ main section h2 {
   background: #fa3f6f;
 }
 
+.nuestro-blog .imagen-blog img {
+  max-width: 370px;
+}
+
 @media (max-width: 768px) {
   .productos {
     grid-template-columns: 1fr 1fr;
@@ -702,14 +706,63 @@ main section h2 {
     font-size: 15px;
   }
   .nuestro-blog .imagen-blog img {
-    max-width: 370px;
+    max-width: 350px;
+  }
+  .form-contacto {
+    width: 410px;
+  }
+  .form-contacto .formulario form p {
+    margin-left: 5px;
+  }
+  .form-contacto .formulario form p input {
+    width: 380px;
+  }
+  .form-contacto .formulario form p textarea {
+    width: 380px;
+  }
+  .form-contacto .formulario form button {
+    margin-left: 5px;
+    width: 385px;
+  }
+  .form-contacto .formulario h2 {
+    font-size: 25px;
+  }
+  .form-contacto .formulario h3 {
+    margin-left: 5px;
+    font-size: 16px;
+  }
+  .form-contacto .formulario p {
+    font-size: 14px;
+  }
+}
+@media (max-width: 425px) {
+  .portada {
+    height: 400px;
+  }
+  .form-contacto {
+    width: 350px;
+  }
+  .form-contacto .formulario form p input {
+    width: 310px;
+  }
+  .form-contacto .formulario form p textarea {
+    width: 310px;
+  }
+  .form-contacto .formulario form button {
+    width: 320px;
+  }
+  .form-contacto .formulario h2 {
+    font-size: 20px;
   }
 }
 @media (max-width: 375px) {
-  .productos-novedades {
-    grid-template-columns: 1fr;
+  .portada {
+    height: 350px;
   }
-  .productos-stock {
+  main h1 {
+    font-size: 28px;
+  }
+  .productos {
     grid-template-columns: 1fr;
   }
   .nav-encabezado {
@@ -722,6 +775,29 @@ main section h2 {
     grid-template-columns: 1fr;
     grid-template-rows: repeat(3, auto);
     grid-template-areas: "area-titulo-mas" "area-seguridad" "area-precio";
+  }
+  .nuestro-blog .imagen-blog img {
+    max-width: 300px;
+  }
+  .form-contacto {
+    width: 300px;
+  }
+  .form-contacto .formulario form p input {
+    width: 280px;
+  }
+  .form-contacto .formulario form p textarea {
+    width: 280px;
+  }
+  .form-contacto .formulario form button {
+    width: 290px;
+  }
+  .form-contacto .formulario h2 {
+    font-size: 20px;
+  }
+}
+@media (max-width: 320px) {
+  .nuestro-blog .imagen-blog img {
+    max-width: 280px;
   }
 }
 

@@ -59,8 +59,49 @@
 	}
 	.imagen-blog {
 		img {
-			max-width: 370px;
+			max-width: 350px;
 		}
 	}
 }
+
+.form-contacto {
+	width: 410px;
+		   
+	.formulario {
+		form {
+			p {
+				margin-left: 5px;
+				input {
+				 
+					width: 380px;
+				   
+				}
+				textarea {
+					width: 380px;
+				   
+				}
+				
+			}
+			button {
+			   margin-left: 5px;
+				width: 385px;
+			   
+			}
+		   
+		}
+		h2 {
+			font-size: 25px;			           
+		}
+		h3 {
+			margin-left: 5px;
+			font-size: 16px;              
+		}
+		p {
+			font-size: 14px;         
+		}
+		
+	}
+}
+
+
 }
